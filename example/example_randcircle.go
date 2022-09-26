@@ -20,7 +20,7 @@ func main() {
 		B: 122,
 		A: 30,
 	})
-	c.SetColorSchema(common.Plasma)
+	c.SetColorSchema(common.DarkRed)
 	c.SetIterations(4)
 	c.FillBackground()
 	c.Draw(arts.NewRandCicle(30, 80, 0.2, 2, 10, 30, true))

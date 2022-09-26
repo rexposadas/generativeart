@@ -14,7 +14,7 @@ func main() {
 	c.SetBackground(common.MistyRose)
 	c.SetLineWidth(10)
 	c.SetLineColor(common.Orange)
-	c.SetColorSchema(common.Plasma)
+	c.SetColorSchema(common.DarkRed)
 	c.SetForeground(common.Tomato)
 	c.FillBackground()
 	c.Draw(arts.NewSpiralSquare(40, 400, 0.05, true))
