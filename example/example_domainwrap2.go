@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-func cmap(r, m1, m2 float64) color.RGBA {
+func constraintsMap(r, m1, m2 float64) color.RGBA {
 	rgb := color.RGBA{
 		R: uint8(common.Constrain(m1*200*r, 0, 255)),
 		G: uint8(common.Constrain(r*200, 0, 255)),
@@ -24,7 +24,7 @@ func main() {
 	c := generativeart.NewCanva(500, 500)
 	c.SetBackground(common.Black)
 	c.FillBackground()
-	d := arts.NewDomainWrap(0.01, 4, 4, 20, cmap)
+	d := arts.NewDomainWrap(0.01, 4, 4, 20, constraintsMap)
 	d.SetDynamicParameter(0.005, 0, 100, "./temp")
 	c.Draw(d)
 }

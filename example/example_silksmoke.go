@@ -15,7 +15,7 @@ func main() {
 	c.SetLineWidth(1.0)
 	c.SetLineColor(common.MediumAquamarine)
 	c.SetAlpha(30)
-	c.SetColorSchema(common.Plasma)
+	c.SetColorSchema(common.DarkRed)
 	c.SetIterations(4)
 	c.FillBackground()
 	c.Draw(arts.NewSilkSmoke(400, 20, 0.2, 2, 10, 30, false))

@@ -371,7 +371,7 @@ func main() {
  c.SetBackground(color.RGBA{230, 230, 230, 255})
  c.SetLineWidth(10)
  c.SetIterations(15000)
- c.SetColorSchema(common.Plasma)
+c.SetColorSchema(common.DarkRed)
  c.FillBackground()
  c.Draw(arts.NewDotLine(100, 20, 50, false))
  c.ToPNG("dotline.png")
@@ -589,7 +589,7 @@ func main() {
   B: 122,
   A: 30,
  })
- c.SetColorSchema(common.Plasma)
+ c.SetColorSchema(common.DarkRed)
  c.SetIterations(4)
  c.FillBackground()
  c.Draw(arts.NewRandCicle(30, 80, 0.2, 2, 10, 30, true))
